@@ -5,9 +5,6 @@ def accesible_toronto(venues, accessible, city, capacity):
             new_venues.append(i)
     return new_venues
 
-
-
-
 venues = [
 { 'address': "123 Main Street", 'city': "Toronto", 'wheelchair_accessible': True, 'capacity': 100 },
 { 'address': "567 Centre Street", 'city': "Toronto", 'wheelchair_accessible': False, 'capacity': 400 },
@@ -19,9 +16,6 @@ venues = [
 { 'address': "10 Spruce Avenue Ouest", 'city': "Montreal", 'wheelchair_accessible': False, 'capacity': 525 }
 
 ]
-
-
-
 
 new_venues_list = accesible_toronto(venues, True, "Toronto", 150)
 print("This is the new list of venues that are in toronto are wheelchair accessible and have a capacity of 150 or more: {}".format(new_venues_list))
